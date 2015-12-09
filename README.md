@@ -11,7 +11,7 @@ The library is made of two parts: an unpythonic-style interface, that is a basic
 1. Download and Install the libkeystonecomm.so as per these [instructions](http://www.monkeyboard.org/tutorials/78-interfacing/87-raspberry-pi-linux-dab-fm-digital-radio)
 2. Download this library
   ```
-  git clone git@github.com:madpilot/keystonepy.git
+  git clone https://github.com/YoannQueret/keystonepy.git
   ```
 3. Run
   ```
@@ -52,9 +52,9 @@ with radio.Radio("/dev/ttyACM0") as r:
 
 It's ugly, but it's here:
 
-http://htmlpreview.github.io/?https://github.com/madpilot/keystonepy/blob/master/docs/radio.html
+http://htmlpreview.github.io/?https://github.com/YoannQueret/keystonepy/blob/master/docs/radio.html
 
-http://htmlpreview.github.io/?https://github.com/madpilot/keystonepy/blob/master/docs/program.html
+http://htmlpreview.github.io/?https://github.com/YoannQueret/keystonepy/blob/master/docs/program.html
 
 ## Notes
 
