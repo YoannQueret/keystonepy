@@ -118,15 +118,15 @@ class Radio(object):
         if self.interface.next_stream != True:
             raise OperationFailedError("Could not select the next stream")
 
-    def dab_auto_search(self, start_index, end_index, clear = True):
+    def dab_auto_search(self, start_index=0, end_index=40, clear = False):
         """
         Searches for radio programs
 
         Keyword arguments:
 
-        start_index: DAB index to start searching from. 0 is probably a good start.
-        end_index: DAB index to end searching to. 40 is a nice number
-        clear: If True, the internal channel table will be cleared before the search starts. (default: True)
+        start_index: DAB index to start searching from. (See Keystone Annexe A)
+        end_index: DAB index to end searching to. (See KeystoneAnnexe A)
+        clear: If True, the internal channel table will be cleared before the search starts. (default: False)
         
         Raises OperationFailedError if the previous stream can't be selected
         """
