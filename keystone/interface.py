@@ -97,7 +97,7 @@ class Interface:
         return self.keystone.SetPresetccm(c_char_p(mode), c_char_p(index), c_long(channel))
 
     def dab_auto_search(self, start_index, end_index):
-        return self.keystone.DABAutoSearchhh(c_char_p(start_index), c_char_p(end_index))
+        return self.keystone.DABAutoSearch(c_char_p(start_index), c_char_p(end_index))
 
     def dab_auto_search_no_clear(self, start_index, end_index):
         return self.keystone.DABAutoSearchNoClear(c_char_p(start_index), c_char_p(end_index))
