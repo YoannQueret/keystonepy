@@ -1,10 +1,11 @@
 #! /usr/bin/python
 from keystone.radio import Radio
+import keystone.constants as constants
 import time
 
 program_index = 0
 
-with Radio("/dev/ttyACM0") as r:
+with Radio("/dev/ttyACM0", mode=constants.DAB) as r:
     # Reset database
     r.reset
     
