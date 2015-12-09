@@ -3,10 +3,10 @@
 from distutils.core import setup
 
 setup(name='keystone',
-      version='0.1',
+      version='0.11',
       description='Python Library for the Monkeyboard DAB/DAB+ FM Digital Radio Board',
-      author='Myles Eftos',
-      author_email='myles@madpilot.com.au',
-      url='https://github.com/madpilot/keystonepy/',
+      author='Yoann QUERET based on Myles Eftos work',
+      author_email='yoann@queret.net',
+      url='https://github.com/YoannQueret/keystonepy/',
       packages=['keystone'],
      )
