@@ -5,6 +5,9 @@ import time
 program_index = 0
 
 with Radio("/dev/ttyACM0") as r:
+    # Reset database
+    r.reset
+    
     # Search from 5A to 13F (See annexe A)
     print "Searching ..."
     r.dab_auto_search(clear=False)
