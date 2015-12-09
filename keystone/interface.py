@@ -74,7 +74,7 @@ class Interface:
         return SignalStrength(strength, error)
 
     def get_program_type(self, mode, index):
-        return self.keystone.GetProgramType(c_char_p(mode), c_long_p(index))
+        return self.keystone.GetProgramType(c_char_p(mode), c_long(index))
 
     def get_program_text(self):
         buf = create_unicode_buffer(300)
