@@ -111,6 +111,9 @@ class Interface:
 
     def get_data_rate(self):
         return self.keystone.GetDataRate()
+        
+    def get_sampling_rate(self):
+		return self.keystone.GetSamplingRate()
 
     def set_stereo_mode(self, mode):
         return self.keystone.SetStereoMode(c_char_p(mode))

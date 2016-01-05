@@ -208,6 +208,13 @@ class Radio(object):
         Returns the current data rate (in kbs)
         """
         return self.interface.get_data_rate()
+        
+    @property
+    def sampling_rate(self):
+        """
+        Returns the current sampling rate (in )
+        """
+        return self.interface.get_sampling_rate()
 
     @property
     def stereo(self):
