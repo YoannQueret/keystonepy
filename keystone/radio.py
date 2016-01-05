@@ -212,7 +212,7 @@ class Radio(object):
     @property
     def sampling_rate(self):
         """
-        Returns the current sampling rate (in )
+        Returns the current sampling rate (in kHz)
         """
         return self.interface.get_sampling_rate()
 
